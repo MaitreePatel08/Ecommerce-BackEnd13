@@ -53,3 +53,40 @@ We have continued developing the modularization/separation of concerns that have
 
 9. Enter "npm start" so as to synchronize the Sequelize models with the ecommerce_db and have the Express server listening at the port stipulated in the "server.js" file. Once the message
 "App listening on port ${port}!" appears in the terminal, you can start testing the routes, some of them in the browser of your choice while others will require an API platform like"PostMan"/"Insomnia".
+
+
+# Credits
+
+The project is of the authorship of Jonathan Maldonado.The GitHub repo can be found at: <https://github.com/MaitreePatel08/Ecommerce-BackEnd13.git>.
+
+The walkthrough video showing the functionality of the defined routes can be found in Google Drive at: <https://watch.screencastify.com/v/NPiQR4HkMYua2D0BpLiN>
+
+The .gitignore file was lifted from the GitLab class repo found at: <https://git.bootcampcontent.com>.
+
+The starter code for the app can be found at:  <https://github.com/coding-boot-camp/fantastic-umbrella>
+
+It provides most of the folder structure for the project (minus the "assets" folder ). In terms of coding style and modularization, we have taken inspiration from the activities and Mini-Project for the Module 13 of the Rutgers Full Stack Bootcamp.
+
+This app works in the Node.js JavaScript runtime environment. The latest stable (recommended version) can be found at: <https://nodejs.org/en/download>
+
+We use npm for the specification (semantic versioning) of the app's dependencies and their installation. Here is the URL for the official site of the npm registry: <https://www.npmjs.com>
+Here are the dependencies for the development and production environments that we added, including links to find their most recent versions:
+
+Dev-dependencies:
+
+1. Nodemon: "^2.0.3". Used to continuously track the changes to the .js and .json file while coding and debugging, so as not to have to manually stop and restart the express server from listening at the designated port after each change.
+<https://www.npmjs.com/package/nodemon>
+
+Dependencies:
+
+1. Express: "^4.17.1". In order to create and work with servers, middleware, routers, etc.
+<https://www.npmjs.com/package/express>
+
+2. DotEnv: "^8.2.0". Employed so that we can configure our connections to the database without hardcoding sensititive information that could get compromised by storing the data in environmental variables.
+<https://www.npmjs.com/package/dotenv>
+
+3. MySQL2: "^2.1.0". Used to create a connection to and make queries to the database without having to log to the MySQL shell and enter the queries through its CLI, but instead using scripts in JS files.
+<https://www.npmjs.com/package/mysql2>
+
+4. Sequelize:"^5.21.7". ORM (Object Relational Mapping) package that synchronizes JS (ES6 specification) classes to the database in order to perform CRUD operations in said database and establish associations(realations) between tables using scripts instead of SQL commands (unless we deem convenient or necessary to use literals).
+<https://www.npmjs.com/package/sequelize>
