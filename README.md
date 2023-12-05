@@ -55,11 +55,83 @@ We have continued developing the modularization/separation of concerns that have
 "App listening on port ${port}!" appears in the terminal, you can start testing the routes, some of them in the browser of your choice while others will require an API platform like"PostMan"/"Insomnia".
 
 
+## Usage
+
+NB: Since this project consists only of the back-end (server-side) part of a would-be website/API, in order to test the routes that require a request body (the Post and Put routes)the user will need to use API platform software like  "Insomnia" v 2023.5.8. The screenshots show that particular API platform in use and  is what we use to prove functionality in the walkthrough video whose link is in the "Credits" section. Henceforth, ":id" denotes a route parameter. It accepts positive integers as values. The POST and PUT routes require passing a JSON string of the appropriate form to be parsed into a JS object using middleware defined in "server.js" and passed as part of the body of the request (req.body).
+
+1. Using "Insomnia", we can organize our routes for each table as shown below:
+
+![Alt text](assets/img1.png)
+
+2. If we make a GET request to "/api/categories", we get:
+
+![Alt text](assets/img2.png)
+
+3. If we make a GET request to "/api/categories/:id" , we get:
+
+![Alt text](assets/img3.png)
+
+4. If we make a POST request to "api/categories", we get:
+
+![Alt text](assets/img4.png)
+
+5. If we make a PUT request to "api/categories/:id", we get:
+
+![Alt text](assets/img5.png) 
+
+6. If we make a DELETE request to "api/categories/:id", we get:
+
+![Alt text](assets/img6.png)
+
+7. If we make a GET request to "/api/products", we get:
+
+![Alt text](assets/img7.png)
+
+8. If we make a GET request to "/api/products/:id" we get:
+
+![Alt text](assets/img8.png)
+
+9. If we make a POST request to "api/products", we get:
+
+![Alt text](assets/img9.png)
+
+10. If we make a PUT request to "api/products/:id", we get:
+
+![Alt text](assets/img10.png)
+
+11. If we make a DELETE request to "api/products/:id", we get:
+
+![Alt text](assets/img11.png)
+
+12. If we make a GET request to "/api/tags", we get:
+
+![Alt text](assets/img12.png)
+
+13. If we make a GET request to "/api/tags/:id" , we get:
+
+![Alt text](assets/img13.png)
+
+14. If we make a POST request to "api/tags", we get:
+
+![Alt text](assets/img14.png)
+
+15. If we make a PUT request to "api/tags/:id", we get:
+
+![Alt text](assets/img15.png)
+
+16. If we make a DELETE request to "api/tags/:id", we get:
+
+![Alt text](assets/img16.png)
+
+17. If we try to access any other endpoint, using any method, we get:
+
+![Alt text](assets/img17.png)
+
+
+
 # Credits
 
 The project is of the authorship of Jonathan Maldonado.The GitHub repo can be found at: <https://github.com/MaitreePatel08/Ecommerce-BackEnd13.git>.
-
-The walkthrough video showing the functionality of the defined routes can be found in Google Drive at: <https://watch.screencastify.com/v/NPiQR4HkMYua2D0BpLiN>
 
 The .gitignore file was lifted from the GitLab class repo found at: <https://git.bootcampcontent.com>.
 
